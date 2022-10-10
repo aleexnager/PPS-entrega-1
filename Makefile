@@ -1,6 +1,6 @@
 CFLAGS=gcc -Wall -Wextra -Werror
 
-all: invertir multiplicar mainEc2g
+all: invertir multiplicar ec2g
 
 invertir: invertir.c
 	$(CFLAGS) -o invertir invertir.c
