@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
             }
         }
         /*Inversion*/
-        for (i = length - 1; i >= 0; i--)
+        for (i = length - 1; i >= 0; --i)
         {
             printf("%d ", a[i]);
             if (i == 0)
