@@ -30,30 +30,30 @@ int main(int argc, char *argv[])
     int m1[m][n], m2[n][p], mRes[m][p]; /*matriz 1, matriz 2 y matriz resultado*/
 
     /*guardamos la matriz 1*/
-    for (i = 0; i < m; i++)
+    for (i = 0; i < m; ++i)
     {
-        for (j = 0; j < n; j++)
+        for (j = 0; j < n; ++j)
         {
             fscanf(f, "%d", &m1[i][j]);
         }
     }
 
     /*guardamos la matriz 2*/
-    for (i = 0; i < n; i++)
+    for (i = 0; i < n; ++i)
     {
-        for (j = 0; j < p; j++)
+        for (j = 0; j < p; ++j)
         {
             fscanf(f, "%d", &m2[i][j]);
         }
     }
 
     /*multiplicamos las matrices*/
-    for (i = 0; i < m; i++)
+    for (i = 0; i < m; ++i)
     {
-        for (j = 0; j < p; j++)
+        for (j = 0; j < p; ++j)
         {
             mRes[i][j] = 0;
-            for (k = 0; k < n; k++)
+            for (k = 0; k < n; ++k)
             {
                 mRes[i][j] += m1[i][k] * m2[k][j];
             }
@@ -61,9 +61,9 @@ int main(int argc, char *argv[])
     }
 
     /*imprimimos la matriz resultado*/
-    for (i = 0; i < m; i++)
+    for (i = 0; i < m; ++i)
     {
-        for (j = 0; j < p; j++)
+        for (j = 0; j < p; ++j)
         {
             printf("%d ", mRes[i][j]);
         }
