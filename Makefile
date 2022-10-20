@@ -1,4 +1,4 @@
-CFLAGS=gcc -Wall -Wextra -Werror
+CFLAGS=gcc -Wall -Wextra -Werror -ansi -pedantic
 
 all: invertir multiplicar mainEc2g
 
