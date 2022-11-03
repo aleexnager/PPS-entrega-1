@@ -7,4 +7,4 @@ Todos los ejercicios resueltos y con sus enunciados.
 El pdf con todos los enunciados se puede ver [aquí](https://github.com/aleexnager/PPS-entrega-1/blob/main/Entrega%201%20-%20Ejercicios%20Prácticos%20C%20PPS%202022_2023.pdf)
 
 ## Make
-Para compilar los archivos se dispone de un Makefile, basta con poner **make** en la terminal dentro del direcciorio donde se encuentren los archivos
+Para compilar los archivos se dispone de un Makefile, basta con poner `make` en la terminal dentro del direcciorio donde se encuentren los archivos
