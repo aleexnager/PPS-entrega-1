@@ -4,7 +4,8 @@ Ejercicios para la primera entrega de la asignatura de Programación Para Sistem
 Todos los ejercicios resueltos y con sus enunciados.
 
 ## Enunciados
-El pdf con todos los enunciados se puede ver [aquí](https://github.com/aleexnager/PPS-entrega-1/blob/main/Entrega%201%20-%20Ejercicios%20Prácticos%20C%20PPS%202022_2023.pdf)
+El pdf con todos los enunciados se puede ver [aquí](https://github.com/aleexnager/PPS-entrega-1/blob/main/Entrega%201%20-%20Ejercicios%20Prácticos%20C%20PPS%202022_2023.pdf).
 
-## Make
-Para compilar los archivos se dispone de un Makefile, basta con poner `make` en la terminal dentro del direcciorio donde se encuentren los archivos
+## Compilación y Ejecución
+Para compilar los programas se dispone de un Makefile, basta con poner `make` en la terminal dentro del direcciorio donde se encuentren los archivos.
+Para ejecutar los programas desde una terminal BASH deberan llamarse junto a un archivo redirigido por la entrada estandar, de modo que por ejemplo: `./invertir < numeros.txt`
