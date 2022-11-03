@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     if (argv[2] == NULL)
     {
         printf("No se pudo abrir el fichero\n");
+        printf("Formato esperado: ./invertir.c < fich.txt\n");
         exit(1);
     }
 

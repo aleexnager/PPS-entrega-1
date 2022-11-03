@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
     /*Declaracion de variables y comprobacion de que el fichero se abre correctamente*/
     if (argv[2] == NULL)
     {
-        printf("No se pudo abrir el fichero %s\n", argv[1]);
+        printf("No se pudo abrir el fichero\n");
+        printf("Formato esperado: ./multiplicar.c < fich.txt\n");
         exit(1);
     }
 

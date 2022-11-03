@@ -5,32 +5,26 @@
 
 int main(int argc, char *argv[])
 {
-    /*Comprobacion de la llamada*/
-    if (argc != 2)
-    {
-        printf("ERROR\nFormato esperado: invertir <fichero.txt>\n");
-        return 1;
-    }
-
     /*Declaracion de variables y comprobacion de que el fichero se abre correctamente*/
     int cont = 1;
     double a, b, c, px1, px2;
+    (void)argc;
 
-    FILE *f;
-    f = fopen(argv[1], "r");
-    if (f == NULL)
+    /*Comprobacion de la llamada*/
+    if (argv[2] == NULL)
     {
-        printf("No se pudo abrir el fichero %s", argv[1]);
-        return 1;
+        printf("No se pudo abrir el fichero\n");
+        printf("Formato esperado: ./mainEc2g.c < fich.txt\n");;
+        exit(1);
     }
 
-    while (!feof(f))
+    while (!feof(stdin))
     {
         while (cont != 0)
         {
-            fscanf(f, "%lf", &a);
-            fscanf(f, "%lf", &b);
-            fscanf(f, "%lf", &c);
+            scanf("%lf", &a);
+            scanf("%lf", &b);
+            scanf("%lf", &c);
             cont--;
         }
         cont = 1;
@@ -38,6 +32,5 @@ int main(int argc, char *argv[])
         printf("%lf, %lf\n", px1, px2);
 
     }
-    fclose(f);
     return 0;
 }
