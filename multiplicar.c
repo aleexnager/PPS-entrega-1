@@ -1,40 +1,34 @@
 #include <stdio.h>
+#include <stdlib.h>
+#define LEN 64
 
 int main(int argc, char *argv[])
 {
-    /*Comprobacion de la llamada*/
-    if (argc != 2)
-    {
-        printf("ERROR\nFormato esperado: invertir <fichero.txt>\n");
-        return 1;
-    }
+    int i, j, k;
+    int m = 1; /* int positivo representa filas 1 matriz */
+    int n = 1; /* int positivo representa columnas 1 matriz (coincide con num filas 2 matriz)*/
+    int p = 1; /* int positivo representa columnas 2 matriz */
+    int aux = m;
+    int m1[LEN][LEN], m2[LEN][LEN], mRes[LEN][LEN];
+    (void)argc;
 
     /*Declaracion de variables y comprobacion de que el fichero se abre correctamente*/
-    FILE *f;
-    f = fopen(argv[1], "r");
-    if (f == NULL)
+    if (argv[2] == NULL)
     {
-        printf("No se pudo abrir el fichero %s", argv[1]);
-        return 1;
+        printf("No se pudo abrir el fichero %s\n", argv[1]);
+        exit(1);
     }
 
-    int i, j, k;
-    int m = 0; /* int positivo representa filas 1 matriz */
-    int n = 0; /* int positivo representa columnas 1 matriz (coincide con num filas 2 matriz)*/
-    int p = 0; /* int positivo representa columnas 2 matriz */
-
-    fscanf(f, "%d", &m);
-    fscanf(f, "%d", &n);
-    fscanf(f, "%d", &p);
-
-    int m1[m][n], m2[n][p], mRes[m][p]; /*matriz 1, matriz 2 y matriz resultado*/
+    scanf("%d", &m);
+    scanf("%d", &n);
+    scanf("%d", &p);
 
     /*guardamos la matriz 1*/
     for (i = 0; i < m; ++i)
     {
         for (j = 0; j < n; ++j)
         {
-            fscanf(f, "%d", &m1[i][j]);
+            scanf("%d", &m1[i][j]);
         }
     }
 
@@ -43,7 +37,7 @@ int main(int argc, char *argv[])
     {
         for (j = 0; j < p; ++j)
         {
-            fscanf(f, "%d", &m2[i][j]);
+            scanf("%d", &m2[i][j]);
         }
     }
 
@@ -61,15 +55,23 @@ int main(int argc, char *argv[])
     }
 
     /*imprimimos la matriz resultado*/
+    aux = m;
     for (i = 0; i < m; ++i)
     {
         for (j = 0; j < p; ++j)
-        {
-            printf("%d ", mRes[i][j]);
+        {   
+            aux--;
+            if (aux == 0)
+            {
+                printf("%d\n", mRes[i][j]);
+            }
+            else
+            {
+                printf("%d ", mRes[i][j]);
+            }
         }
-        printf("\n");
+        aux = m;
     }
 
-    fclose(f);
     return 0;
 }
