@@ -1,50 +1,21 @@
-LICENSE
-                        Versión 1, 11 Nov 2022
+MIT License
 
-Copyright (C) Alejandro Náger Fernández-Calvo. <https://twitter.com/aleexnager>
-Prohibida la copia de este código.
+Copyright (c) 2022 Alex Náger Fernández-Calvo
 
-Este código tiene como propósito el ser didáctico. Cualquier intento 
-de copia para futuros proyectos en la asignatura será contraproducente 
-para quien lo copie, dado a que en el propio sistema de pruebas de la 
-asignatura saltará que es un proyecto copiado lo cual lleva a suspender 
-el proyecto y al alumno.
-Considere también, que NO SERÁ el mismo proyecto, ya que en cada curso 
-los enunciados cambian.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Este código puede servirle como ayuda, pero HAGA SU PROPIO CÓDIGO, por su 
-propio bien.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Universidad Politécnica de Madrid (UPM)
-  Escuela Técnica Superior de Ingenieros Informáticos (ETSIINF)
-    Programación Para Sistemas (PPS)
-
-Autor:
-  Alejandro Náger Fernández-Calvo
-  
-  
-  
-  
-  
-  LICENSE
-                        Version 1, 11 Nov 2022
-
-Copyright (C) Alejandro Náger Fernández-Calvo. <https://twitter.com/aleexnager>
-Copying this code is prohibited.
-
-This code is intended to be educational. Any attempt
-of copy for future projects in the course will be counterproductive
-for whoever copies it, given that in the very system of tests of the
-subject will alert that it is a copied project which leads to fail
-the project and the student.
-Also consider that it WILL NOT BE the same project, since in each course
-the statements change.
-
-This code may help you, but MAKE YOUR OWN CODE, for your own good.
-
-Universidad Politécnica de Madrid (UPM)
-  Escuela Técnica Superior de Ingenieros Informáticos (ETSIINF)
-    Programación Para Sistemas (PPS)
-
-Autor:
-  Alejandro Náger Fernández-Calvo
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
