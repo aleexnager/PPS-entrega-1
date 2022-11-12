@@ -37,5 +37,5 @@ int resolver(double a, double b, double c, double *px1, double *px2)
         printf("Caso 1: ");
         return 1;
     }
-    return 0;
+    exit(0);
 }
